@@ -30,7 +30,7 @@ Route::get('/about', function () {
     return view('about', compact('name', 'age'));
 });
 
-route::post('send', function (Request $request) {
+route::post('send', function (HttpRequest $request) {
     $name = $request->myname;
     return view('about', compact('name'));
 });
